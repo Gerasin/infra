@@ -815,6 +815,10 @@ $(document).ready(function() {
 	headerHeight();
 
 
+	// menu height
+	menuItems();
+
+
 })
 
 
@@ -895,6 +899,7 @@ $(window).resize(function() {
 	maxpWidth();
 	minHeightImg();
 	mainCorusel();
+	menuItems();
 
 });
 
@@ -928,6 +933,19 @@ $('body').bind( "touchend", function(e){
 
 });
 
+
+function menuItems() {
+	if($(window).width() > 1200) {
+		var itemHeight = $('.head__menu li').height() + 10,
+		menuHeight = $('.head__menu').height();
+		if(menuHeight > itemHeight) {
+			$('.head__menu').addClass('active')
+		} else {
+			$('.head__menu').removeClass('active')
+		}
+	}
+
+}
 
 
 //  REMOVE

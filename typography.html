@@ -56,12 +56,13 @@
                         <div class="head__search">
                             <form action="#" method="post">
                                 <input type="submit" class="head__search-btn">
-                                <input type="text" class="head__search-txt" placeholder="Поиск">
+                                <input type="text" class="head__search-txt" placeholder="Поиск по названию, автору или ISBN">
                             </form>
                         </div>
                         <a href="" class="menu-mob">Меню</a>
                         <ul class="head__menu">
                             <a href="" class="head__menu-close"></a>
+                            <li><a href="">Каталог</a></li>
                             <li><span>Авторам</span></li>
                             <li><a href="">Издателям</a>
                                 <ul>
@@ -350,7 +351,15 @@
                                 <div class="pagination">
                                     <a href="#" class="pagination__item prev">Вперед</a>
                                     <div class="pagination__namber">
-                                        <a href="#" class="pagination__item"><img src="img/themp/pag-prev.png" alt=""></a>
+                                        <a href="#" class="pagination__item">
+                                            <svg 
+                                                 xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                 width="9px" height="18px">
+                                                <path fill-rule="evenodd"  fill="rgb(22, 130, 191)"
+                                                 d="M8.950,16.461 L8.200,17.210 L0.031,9.041 L0.122,8.951 L0.031,8.860 L8.200,0.693 L8.949,1.442 L1.439,8.950 L8.950,16.461 Z"/>
+                                                </svg>
+                                        </a>
                                         <span class="pagination__item pagination__page">1</span>
                                         <a href="#" class="pagination__item pagination__page">2</a>
                                         <a href="#" class="pagination__item pagination__page">3</a>
@@ -358,7 +367,15 @@
                                         <a href="#" class="pagination__item pagination__page">5</a>
                                         <a href="#" class="pagination__item pagination__page">6</a>
                                         <span class="pagination__item">...</span>
-                                        <a href="#" class="pagination__item"><img src="img/themp/pag-next.png" alt=""></a>
+                                        <a href="#" class="pagination__item">
+                                            <svg 
+                                             xmlns="http://www.w3.org/2000/svg"
+                                             xmlns:xlink="http://www.w3.org/1999/xlink"
+                                             width="9px" height="18px">
+                                            <path fill-rule="evenodd"  fill="rgb(22, 130, 191)"
+                                             d="M8.878,8.951 L8.969,9.041 L0.800,17.210 L0.050,16.461 L7.561,8.950 L0.051,1.442 L0.800,0.693 L8.969,8.860 L8.878,8.951 Z"/>
+                                            </svg>
+                                        </a>
                                     </div>
                                     <a href="#" class="pagination__item next">Назад</a>
                                 </div>
@@ -451,11 +468,11 @@
                                             <div class="row">
                                                 <div class="col-sm-6">
                                                     <div class="input-wrap__header">Электронная почта *</div>
-                                                    <input type="text">
+                                                    <input type="text" class="valid-txt" date-error="Не ввели эл. почту">
                                                 </div>
                                                 <div class="col-sm-6">
                                                     <div class="input-wrap__header">Телефон *</div>
-                                                    <input type="text">
+                                                    <input type="text" class="valid-txt" date-error="Не ввели телефон">
                                                 </div>
                                             </div>
                                         </div>

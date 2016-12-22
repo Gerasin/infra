@@ -38,8 +38,7 @@
 
 @media (max-width: 1600px) {
     .container-fluid {width: 1200px;}
-    
-    body .head .head__menu li {margin-left: 19px; font-size: 14px;}
+    body .head .head__menu li {margin-left: 19px; font-size: 12px;}
     body .head .head__menu li:first-child {margin: 0;}
     body .head .head__menu {margin-top: 47px;}
     .head__search {width: 200px;}
@@ -281,6 +280,7 @@
 	.head__menu-close {top: 28px; right: 15px;}
 	.head__menu-close:before, .head__menu-close:after, .head__menu-close {width: 29px;}
 	.open-menu:before {right: 2px;}
+	.owl-carousel .owl-item img {width: 100% !important;}
 
 
 }
