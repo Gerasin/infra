@@ -385,7 +385,7 @@ body .head__search .head__search-txt {display: block;border: 0;width: 100%;paddi
 .head__search :-moz-placeholder           {color:#fff;}/* Firefox 18- */
 .head__search :-ms-input-placeholder      {color:#fff;}
 
-body .head .head__menu {float: right;padding: 0;margin: 42px 0 0;padding: 1px 0 30px; max-width: 880px;}
+body .head .head__menu {float: right;padding: 0;margin: 42px 0 0;padding: 1px 0 30px; max-width: 775px;}
 body .head .head__menu li {list-style: none;display: inline-block;vertical-align: top;position: relative;font-size: 16px;margin: 0 0 0 27px;font-weight: 300;}
 body .head .head__menu li:first-child {margin: 0;}
 body .head .head__menu li:before {display: none;}
@@ -403,9 +403,26 @@ body .head .head__menu li ul:before {content: ' '; position: absolute; left: 50%
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     border-bottom: 8px solid #fff;}
-body .head .head__menu.active li .head__menu-basket {display: none;}
-body .head .head__menu.active li {margin-bottom: 7px;}
-body .head .head__menu.active {margin-top: 25px;}
+
+
+body .head .head__lnk-basket {float: right;padding: 0;margin: 42px 0 0;padding: 1px 0 30px; max-width: 775px;}
+body .head .head__lnk-basket li {list-style: none;display: inline-block;vertical-align: top;position: relative;font-size: 16px;margin: 0 0 0 27px;font-weight: 300;}
+body .head .head__lnk-basket li:before {display: none;}
+body .head .head__lnk-basket li a {text-decoration: none; color: #3fcdfd;}
+body .head .head__lnk-basket li a:hover {text-decoration: underline;}
+body .head .head__lnk-basket li span {color: #fff;}
+body .head .head__lnk-basket li ul {position: absolute; top: 40px; left: 50%; display: none; padding: 17px 0; width: 420px; margin-left: -210px; background: #fff; text-align: left; z-index: 20;
+    -webkit-box-shadow: 0 2px 10px rgba(0,47,73,.34);
+    -moz-box-shadow: 0 2px 10px rgba(0,47,73,.34);
+    box-shadow: 0 2px 10px rgba(0,47,73,.34); }
+body .head .head__lnk-basket li ul li {display: block; font-size: 16px; margin: 0; font-weight: 400;}
+body .head .head__lnk-basket li ul li a {display: block; padding: 9px 10px 9px 33px; color: #1682bf;}
+body .head .head__lnk-basket li ul li a:hover {text-decoration: none; background: #daf2c6;}
+body .head .head__lnk-basket li ul:before {content: ' '; position: absolute; left: 50%; margin-left: -8px; top: -8px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff;}
+
 
 body .menu-mob {display: none; position: absolute; top: 37px; left: 270px; border: 1px solid #86d341; height: 33px; padding: 0 16px 0 20px; text-decoration: none; font-size: 16px; line-height: 31px; color: #86d341;
     -webkit-border-radius: 16px;
