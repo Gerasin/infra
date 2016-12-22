@@ -302,7 +302,7 @@ body span.pagination__page {background: #86d341; color: #fff !important;}
 }
 .btn-green, .workarea input[type='submit'].btn-green, .workarea input[type='submit'].btn-green:focus,
 .modal input[type='submit'].btn-green, .modal input[type='submit'].btn-green:focus,
-.modal button.btn-green, .modal button.btn-green:focus, .workarea button.btn-green, .workarea button.btn-green:focus {background: transparent; color: #000 !important; font-weight: 100 !important; font-size: 18px !important; text-shadow: none;
+.modal button.btn-green, .modal button.btn-green:focus, .workarea button.btn-green, .workarea button.btn-green:focus {background: transparent; color: #000 !important; font-weight: 300 !important; font-size: 18px !important; text-shadow: none;
     -webkit-box-shadow: inset 0 0 0 2px #86d341 !important;
     -moz-box-shadow: inset 0 0 0 2px #86d341 !important;
     box-shadow: inset 0 0 0 2px #86d341 !important;}
@@ -379,7 +379,7 @@ body .workarea label, body .modal label {font-weight: 400;}
 .head__search:hover {background-color: rgba(37,39,67,.3); border: solid 2px #054875;}
 body .head__search .head__search-btn {position: absolute; top: 10px; right: 19px; width: 21px; height: 21px; font-size: 0; background: url(../img/themp/btn-search.png) 0 100% no-repeat; border: 0;}
 body .head__search .head__search-btn:hover {background-position: 0 0;}
-body .head__search .head__search-txt {display: block;border: 0;width: 100%;padding: 0; font-size: 12px; background: none;color: #fff;font-size: 14px;font-family: 'Roboto Slab';position: relative;top: 6px;height: 30px;}
+body .head__search .head__search-txt {display: block;border: 0;width: 100%;padding: 0; font-size: 12px; background: none;color: #fff;font-family: 'Roboto Slab';position: relative;top: 6px;height: 30px;}
 .head__search ::-webkit-input-placeholder {color:#fff;}
 .head__search ::-moz-placeholder          {color:#fff;}/* Firefox 19+ */
 .head__search :-moz-placeholder           {color:#fff;}/* Firefox 18- */
@@ -704,11 +704,12 @@ a:hover .corusel-book__img {
 
 .border-page {position: relative;height: 23px;}
 .border-page:before {content: ' '; position: absolute; top: 0; left: -999px; right: -999px; border-top: 2px solid #f2f2f2;}
+.baner-row-mobil {display: none; padding: 0 0 30px;}
+.baner-row-mobil__header {text-align: center; margin: 0 0 20px; font-size: 26px;}
 
+.news .owl-next, .news .owl-prev {top: 70px !important;}
 
-
-
-.main-corusel {margin: 0 0 58px; display: block;}
+.main-corusel {margin: 0 0 20px; display: block;}
 .main-corusel-no {margin: 0 0 30px; display: block; overflow: hidden;}
 .main-corusel__item {position: relative;text-align: center;padding: 65px 0 90px;}
 .main-corusel__img {position: absolute; top: 0; left: 0; width: 100%; min-width: 100%; min-height: 100%;} 
@@ -806,7 +807,14 @@ a:hover .corusel-book__img {
 .baner-tovar__img img {vertical-align: top; margin-bottom: 50px;
     -webkit-box-shadow: 0 3px 5px #bfbfbf;
     -moz-box-shadow: 0 3px 5px #bfbfbf;
-    box-shadow: 0 3px 5px #bfbfbf; }
+    box-shadow: 0 3px 5px #bfbfbf; 
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;}
+.baner-tovar__img a:hover img {
+    -webkit-box-shadow: 0 8px 15px #bfbfbf;
+    -moz-box-shadow: 0 8px 15px #bfbfbf;
+    box-shadow: 0 8px 15px #bfbfbf; }
 .baner-tovar__cont {margin: 0 0 0 493px;padding: 7px 0 0;}
 .baner-tovar__status {margin: 0 0 22px;}
 .baner-tovar__status span {display: inline-block; background: #86d341; font-size: 18px; font-weight: 300; padding: 0px 2px 0px;
@@ -823,7 +831,7 @@ a:hover .corusel-book__img {
 .baner-tovar__pay del {position: absolute; top: -23px; left: 0; font-weight: bold; color: #92b3ca; font-size: 18px;}
 .baner-tovar__pay del span {font-size: 24px;}
 .baner-tovar__border {border-top: 1px solid #dcdcdc; height: 20px; width: 270px;}
-.baner-tovar__footer {font-size: 14px; line-height: 20px; color: #8699a6; max-width: 430px; padding-bottom: 20px;}
+.baner-tovar__footer {font-size: 14px; line-height: 20px; color: #8699a6; max-width: 470px; padding-bottom: 20px;}
 .btn-basket {margin: 0 35px 30px 0;}
 .baner-tovar__detals {overflow: hidden; position: relative; font-size: 16px; margin: 0 0 20px;}
 .baner-tovar__annotation {display: none;}
@@ -841,7 +849,7 @@ a:hover .corusel-book__img {
 .page-baner {background: url(../img/body/baner-bg.jpg) 0 0 no-repeat; background-size: cover; color: #fff; text-align: center; padding: 42px 0 20px; margin: 0 0 34px;}
 .page-baner__in {max-width: 830px; margin: 0 auto;}
 
-.catalog-menu-border {position: relative; margin: 0 0 90px;
+.catalog-menu-border {position: relative; margin: 0 0 55px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;}
@@ -866,8 +874,9 @@ body .catalog-menu li.active a:before {content: ' '; position: absolute; top: 15
 
 .catalog-filter {float: left; width: 232px;}
 .catalog-sl {margin: 0 0 0 300px;}
-.catalog-header {font-weight: bold; margin: 0 0 20px;}
+.catalog-header {font-weight: bold; margin: -10px 0 7px; display: inline-block;}
 .corusel-catalog {margin: 0 0 30px;}
+.catalog-padding {height: 60px;}
 
 .catalog-filter {padding: 60px 0 0;}
 .input-wrap__row {font-size: 0; margin: 0 0 20px;}
@@ -941,7 +950,7 @@ body .catalog-menu-mob {display: none !important;}
 .page-tovar {background: none;}
 .page-tovar .baner-tovar__inner {margin: 0; padding: 0;}
 .page-tovar .baner-tovar__cont {margin-left: 530px;}
-.baner-tovar__lnk {padding: 23px 0 0 100px; position: relative; font-size: 16px; padding: 20px 0 0 87px;}
+.baner-tovar__lnk {padding: 23px 0 0 75px; position: relative; font-size: 16px; padding: 20px 0 0 87px;}
 .baner-tovar__lnk img {vertical-align: top; margin: 0 7px 0 0; position: relative; top: 5px;}
 .baner-tovar__lnk a {color: #1682bf;}
 .baner-tovar__corusel {float: left; width: 450px; height: 550px;}
@@ -1009,7 +1018,16 @@ body .basked-tovar__length-in .basked-tovar__inp {border: 0;background: none;tex
 .input-wrap-border {border-top: 1px solid #dddddd;margin: 24px -10px 23px;}
 .payment-condition {padding-bottom: 15px;}
 
+body .baner-tovar-mobile .baner-tovar-mobile__item img {width: 100% !important;}
 
+.catalog-sort {float: right; white-space: nowrap; font-size: 14px;}
+.catalog-sort .selectize-control {display: inline-block; vertical-align: top; min-width: 115px;}
+.catalog-sort .selectize-input {padding-right: 25px;}
+.catalog-sort__header {display: inline-block; padding: 10px 5px 0 0;}
+.catalog-searct-down {float: right; padding: 8px 15px 0 0;}
+.catalog-searct-down .download {font-size: 14px;}
+
+.page-tovar .baner-tovar__cont h5 {  }
 
 /* ==========================================================================
    Helper classes

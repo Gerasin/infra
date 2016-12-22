@@ -56,12 +56,18 @@
                         <div class="head__search">
                             <form action="#" method="post">
                                 <input type="submit" class="head__search-btn">
-                                <input type="text" class="head__search-txt" placeholder="Поиск">
+                                <input type="text" class="head__search-txt" placeholder="Поиск по названию, автору или ISBN">
                             </form>
                         </div>
                         <a href="" class="menu-mob">Меню</a>
+                        <a href="" class="head__menu-close"></a>
+                        <ul class="head__lnk-basket">
+                            <li><a href="">Корзина</a>
+                                <div class="head__menu-basket"><span>7</span></div>
+                            </li>
+                        </ul>
                         <ul class="head__menu">
-                            <a href="" class="head__menu-close"></a>
+                            <li><a href="">Каталог</a></li>
                             <li><span>Авторам</span></li>
                             <li><a href="">Издателям</a>
                                 <ul>
@@ -102,9 +108,6 @@
                             <li><a href="">Покупателям</a></li>
                             <li><a href="">О нас</a></li>
                             <li><a href="">Контакты</a></li>
-                            <li><a href="">Корзина</a>
-                                <div class="head__menu-basket"><span>7</span></div>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -169,9 +172,9 @@
                                                     </div>
                                                 </div>
                                                 <div class="basked-tovar__total-item">
-                                                    <div class="basked-tovar__total-pay"><input type="radio" name="radio-total" id="total-2"><label for="total-2"><span>857.30</span> руб.</label></div>
+                                                    <div class="basked-tovar__total-pay"><input type="radio" name="radio-total" id="total-2" checked="checked"><label for="total-2"><span>857.30</span> руб.</label></div>
                                                     <div class="basked-tovar__total-txt">
-                                                        <a href="">Как получить скидку</a>
+                                                        <a data-toggle="modal" href="#modal-sale">Как получить скидку</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -187,7 +190,7 @@
                                             </div>
                                             <div class="input-wrap">
                                                 <div class="input-wrap__header">Выберите способ оплаты*</div>
-                                                <p><input type="radio" name="pay-1" id="pay-1"><label for="pay-1">Наличными (через терминал)</label></p>
+                                                <p><input type="radio" name="pay-1" id="pay-1" checked="checked"><label for="pay-1">Наличными (через терминал)</label></p>
                                                 <p><input type="radio" name="pay-1" id="pay-2"><label for="pay-2">Robokassa</label></p>
                                                 <p><input type="radio" name="pay-1" id="pay-3"><label for="pay-3">Безналичный расчет (для юридических лиц)</label></p>
                                             </div>
@@ -201,11 +204,11 @@
                                                 <div class="row">
                                                     <div class="col-sm-6">
                                                         <div class="input-wrap__header">Электронная почта *</div>
-                                                        <input type="text">
+                                                        <input type="text" class="valid-txt" date-error="Не ввели Эл. почту">
                                                     </div>
                                                     <div class="col-sm-6">
                                                         <div class="input-wrap__header">Телефон *</div>
-                                                        <input type="text">
+                                                        <input type="text" class="valid-txt" date-error="Не ввели Телефон">
                                                     </div>
                                                 </div>
                                             </div>
@@ -222,17 +225,17 @@
                                                 <div class="row">
                                                     <div class="col-sm-6">
                                                         <div class="input-wrap__header">Город *</div>
-                                                        <input type="text">
+                                                        <input type="text" class="valid-txt" date-error="Не ввели Город">
                                                     </div>
                                                     <div class="col-sm-6">
                                                         <div class="input-wrap__header">Индекс *</div>
-                                                        <input type="text">
+                                                        <input type="text" class="valid-txt" date-error="Не ввели Индекс">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="input-wrap">
                                                 <div class="input-wrap__header">Улица, дом, корпус, квартира *</div>
-                                                <input type="text">
+                                                <input type="text" class="valid-txt" date-error="Не ввели Улицу">
                                             </div>
                                             <div class="input-wrap">
                                                 <div class="input-wrap__header">Комментарий</div>
@@ -366,11 +369,11 @@
             </div>
         </div>
         
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
+        <div class="modal fade" id="modal-sale" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"> 
             <div class="modal-dialog">
                 <div class="modal-content">
                     <a href="" class="close" data-dismiss="modal" aria-hidden="true">&times;</a>
-                    <h2><span>H2</span> Всплывающее модальное окно</h2>
+                    <h4><span>H4</span> Всплывающее модальное окно</h4>
                     <p>Их здесь шесть. Кроме того, на нижней палубе будет жить и команда. Открывает двери в небольшие отсеки капитан корабля с 27-летним стажем. Он на время сменил китель и фуражку. На рабочую форму и сейчас наравне со всеми управляется с шлифовальной машинкой и дрелью.</p>
                 </div>
             </div>

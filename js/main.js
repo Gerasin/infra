@@ -15,16 +15,16 @@ $(document).ready(function() {
 	});
 	$('.menu-mob').on('click', function () {
 		if($(this).hasClass('active')) { 
-			$('.head__menu').fadeOut(300);
+			$('.head__menu, .head__menu-close').fadeOut(300);
 			$(this).removeClass('active');
 		} else {
+			$('.head__menu, .head__menu-close').fadeIn(300);
 			$(this).addClass('active');
-			$('.head__menu').fadeIn(300);
 		};
 		return false;
 	});
 	$('.head__menu-close').on('click', function () {
-		$('.head__menu').fadeOut(300);
+		$('.head__menu, .head__menu-close').fadeOut(300);
 		return false;
 	});
 	
@@ -652,6 +652,35 @@ $(document).ready(function() {
     	autoplayTimeout:3000,
 	});
 
+	$('.baner-tovar-mobile').owlCarousel({
+    	items:1,
+	    margin:0,
+	    loop:true,
+	    lazyLoad:true,
+	    autoHeight:false,
+	    nav:true,
+	    autoplay:true,
+    	autoplayTimeout:3000,
+	});
+
+	var newsOWL = $('.news');
+	newsOWL.owlCarousel({
+    	items:1,
+	    margin:0,
+	    loop:true,
+	    lazyLoad:true,
+	    autoHeight:false,
+	    nav:true,
+	    autoplay:true,
+    	autoplayTimeout:3000
+	});
+	newsCorusel();
+
+
+
+
+	
+
 
 
 
@@ -815,9 +844,34 @@ $(document).ready(function() {
 	headerHeight();
 
 
+	searcPlaceholder();
+
+
 
 
 })
+
+function newsCorusel(){
+	newsOWL = $('.news');
+	if($(window).width() > 767) {
+		newsOWL.trigger('destroy.owl.carousel')
+		newsOWL.removeClass('owl-btn owl-carousel');
+	} else {
+		if(!newsOWL.hasClass('owl-carousel')) {
+			newsOWL.addClass('owl-btn owl-carousel')
+		};
+		newsOWL.owlCarousel({
+	    	items:1,
+		    margin:0,
+		    loop:true,
+		    lazyLoad:true,
+		    autoHeight:false,
+		    nav:true,
+		    autoplay:true,
+	    	autoplayTimeout:3000
+		});
+	}
+}
 
 
 function checkFalse() {
@@ -883,6 +937,15 @@ function headerHeight() {
 function footerHeight() {
 	$('.footer-padding').css({'height' : $('.footer').height() + 30});
 }
+
+function searcPlaceholder() {
+	if($(window).width() > 1600) {
+		$('.head__search-txt').attr('placeholder', 'Поиск по названию, автору или ISBN')
+	} else {
+		$('.head__search-txt').attr('placeholder', 'Поиск')
+	}
+}
+
 $(window).load(function() {
 
 	footerHeight();
@@ -897,6 +960,8 @@ $(window).resize(function() {
 	maxpWidth();
 	minHeightImg();
 	mainCorusel();
+	searcPlaceholder();
+	newsCorusel();
 
 });
 
@@ -907,11 +972,13 @@ $(document).mouseup(function(e){
 	  	$('.burger').removeClass('active');
   	};
 
-  	var container2 = $(".head__menu"); 
-  		if (!container2.is(e.target) && container2.has(e.target).length === 0){
-      	$('.head__menu').fadeOut(100);
-	  	$('.menu-mob').removeClass('active');
-  	};
+  	if($(window).width() < 992) {
+	  	var container2 = $(".head__menu"); 
+	  		if (!container2.is(e.target) && container2.has(e.target).length === 0){
+	      	$('.head__menu').fadeOut(100);
+		  	$('.menu-mob').removeClass('active');
+	  	};
+	}
 
 });
 
@@ -922,11 +989,13 @@ $('body').bind( "touchend", function(e){
 	  	$('.burger').removeClass('active');
   	};
 
-  	var container2 = $(".head__menu"); 
-  		if (!container2.is(e.target) && container2.has(e.target).length === 0){
-      	$('.head__menu').fadeOut(100);
-	  	$('.menu-mob').removeClass('active');
-  	};
+  	if($(window).width() < 992) {
+	  	var container2 = $(".head__menu"); 
+	  		if (!container2.is(e.target) && container2.has(e.target).length === 0){
+	      	$('.head__menu').fadeOut(100);
+		  	$('.menu-mob').removeClass('active');
+	  	};
+	}
 
 });
 

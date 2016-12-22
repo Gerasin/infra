@@ -56,12 +56,18 @@
                         <div class="head__search">
                             <form action="#" method="post">
                                 <input type="submit" class="head__search-btn">
-                                <input type="text" class="head__search-txt" placeholder="Поиск">
+                                <input type="text" class="head__search-txt" placeholder="Поиск по названию, автору или ISBN">
                             </form>
                         </div>
                         <a href="" class="menu-mob">Меню</a>
+                        <a href="" class="head__menu-close"></a>
+                        <ul class="head__lnk-basket">
+                            <li><a href="">Корзина</a>
+                                <div class="head__menu-basket"><span>7</span></div>
+                            </li>
+                        </ul>
                         <ul class="head__menu">
-                            <a href="" class="head__menu-close"></a>
+                            <li><a href="">Каталог</a></li>
                             <li><span>Авторам</span></li>
                             <li><a href="">Издателям</a>
                                 <ul>
@@ -102,9 +108,6 @@
                             <li><a href="">Покупателям</a></li>
                             <li><a href="">О нас</a></li>
                             <li><a href="">Контакты</a></li>
-                            <li><a href="">Корзина</a>
-                                <div class="head__menu-basket"><span>7</span></div>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -911,6 +914,19 @@
                                         </div>
                                         <div class="catalog-sl">
                                             <div class="catalog-header">Найдено 587 результатов</div>
+
+                                            <div class="catalog-sort">
+                                                <span class="catalog-sort__header">Сортировать по</span>
+                                                <select>
+                                                    <option value="0">дате</option>
+                                                    <option value="1">имени</option>
+                                                    <option value="2">рейтингу</option>
+                                                </select>
+                                            </div>
+                                            <div class="catalog-searct-down"><p class="download"><a href="" class="dashed">Готовые прайс-листы</a> <span class="download-format">pdf</span></p></div>
+                                            <div class="catalog-searct-down"><p class="download"><a href="" class="dashed">Готовые прайс-листы</a> <span class="download-format">xls</span></p></div>
+                                            
+                                            <div class="catalog-padding"></div>
                                             <div class="catalog-list">
                                                 <div class="corusel-book__item">
                                                     <div class="corusel-book__in">
@@ -1097,17 +1113,31 @@
                                             <div class="pagination-center">
                                                 <div class="pagination">
                                                     <a href="#" class="pagination__item prev">Вперед</a>
-                                                    <div class="pagination__namber">
-                                                        <a href="#" class="pagination__item"><img src="img/themp/pag-prev.png" alt=""></a>
-                                                        <span class="pagination__item pagination__page">1</span>
-                                                        <a href="#" class="pagination__item pagination__page">2</a>
-                                                        <a href="#" class="pagination__item pagination__page">3</a>
-                                                        <a href="#" class="pagination__item pagination__page">4</a>
-                                                        <a href="#" class="pagination__item pagination__page">5</a>
-                                                        <a href="#" class="pagination__item pagination__page">6</a>
-                                                        <span class="pagination__item">...</span>
-                                                        <a href="#" class="pagination__item"><img src="img/themp/pag-next.png" alt=""></a>
-                                                    </div>
+                                                    <a href="#" class="pagination__item">
+                                                    <svg 
+                                                         xmlns="http://www.w3.org/2000/svg"
+                                                         xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                         width="9px" height="18px">
+                                                        <path fill-rule="evenodd"  fill="rgb(22, 130, 191)"
+                                                         d="M8.950,16.461 L8.200,17.210 L0.031,9.041 L0.122,8.951 L0.031,8.860 L8.200,0.693 L8.949,1.442 L1.439,8.950 L8.950,16.461 Z"/>
+                                                        </svg>
+                                                </a>
+                                                <span class="pagination__item pagination__page">1</span>
+                                                <a href="#" class="pagination__item pagination__page">2</a>
+                                                <a href="#" class="pagination__item pagination__page">3</a>
+                                                <a href="#" class="pagination__item pagination__page">4</a>
+                                                <a href="#" class="pagination__item pagination__page">5</a>
+                                                <a href="#" class="pagination__item pagination__page">6</a>
+                                                <span class="pagination__item">...</span>
+                                                <a href="#" class="pagination__item">
+                                                    <svg 
+                                                     xmlns="http://www.w3.org/2000/svg"
+                                                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                     width="9px" height="18px">
+                                                    <path fill-rule="evenodd"  fill="rgb(22, 130, 191)"
+                                                     d="M8.878,8.951 L8.969,9.041 L0.800,17.210 L0.050,16.461 L7.561,8.950 L0.051,1.442 L0.800,0.693 L8.969,8.860 L8.878,8.951 Z"/>
+                                                    </svg>
+                                                </a>
                                                     <a href="#" class="pagination__item next">Назад</a>
                                                 </div>
                                             </div>
