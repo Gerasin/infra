@@ -81,6 +81,36 @@ $(document).ready(function() {
 	        }
 	    }
 	});
+	$('.corusel-book-big').owlCarousel({
+	    loop:true,
+	    margin:20,
+	    lazyLoad:true,
+	    autoHeight:false,
+	    autoplay:true,
+    	autoplayTimeout:3000,
+	    nav:true,
+	    responsive:{
+	        0:{
+	            items:1
+	        },
+	        500:{
+	            items:2
+	        },
+	        767:{
+	            items:3
+	        },
+	        992:{
+	            items:4
+	        },
+	        1200:{
+	            items:5,
+	            margin:10
+	        },
+	        1600:{
+	            items:6
+	        }
+	    }
+	});
 	$('.corusel-catalog').owlCarousel({
 		loop:true,
 	    margin:60,

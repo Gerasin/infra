@@ -186,7 +186,7 @@ body .fancybox-prev span {background: url(../img/themp/pointer.png) 0 0 no-repea
 .workarea ol li {margin: 0 0 15px;position: relative;list-style: none;font-size: 16px;line-height: 24px;}
 .workarea ol li:before {position: absolute; left: -22px; color: #86d341;
     counter-increment: myCounter;
-    content:counter(myCounter);}
+    content:counter(myCounter) '.';}
 .workarea ul {padding: 0 0 0 21px;margin: 0 0 32px 90px;}
 .workarea ul li {margin: 0px 0 16px;position: relative;list-style: none;font-size: 16px;line-height: 24px;}
 .workarea ul li:before {content: ' '; position: absolute; left: -21px; top: 4px; width: 7px; height: 7px; background: #86d341; margin: 5px 0 0;
@@ -629,7 +629,7 @@ a:hover .news__img img {
 
 .header-center {font-size: 48px;margin-bottom: 27px;text-align: center;}
 .header-left {font-size: 36px;margin-bottom: 27px;text-align: left;}
-.corusel-book {margin: 0 0 39px;}
+.corusel-book, .corusel-book-big {margin: 0 0 39px;}
 .corusel-book__item {padding: 0 10px; margin: 0 auto;}
 .corusel-book__in {width: 190px; margin: 0 auto; text-align: center; font-weight: 600;}
 .corusel-book__img {margin: 0 0 13px;display: block;

@@ -68,6 +68,8 @@
 	.menu-inner {padding: 15px 15px 0 25px;}
 }
 
+
+
 @media (max-width: 1200px) {
 	body .menu__lnk li {font-size: 85%;}
 	.nav-tabs>li>a {padding: 0 15px;}
