@@ -965,7 +965,9 @@ function headerHeight() {
 
 
 function footerHeight() {
-	$('.footer-padding').css({'height' : $('.footer').height() + 30});
+	// $('.footer-padding').css({'height' : $('.footer').height() + 30});
+	var minHeight = $(window).height() - ( $('.footer').height() + $('.head').height() + $('.crubs').height() + 70);
+	$('.page-content').css({'min-height' : minHeight})
 }
 
 function searcPlaceholder() {
