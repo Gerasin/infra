@@ -1,5 +1,12 @@
 $(document).ready(function() {
 
+	//
+
+	$('.baner-tovar__lnk').on('click', function () {
+		$('.fotorama__fsi').click();
+		return false;
+	});
+
 	// max width
 	maxpWidth();
 

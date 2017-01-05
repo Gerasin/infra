@@ -647,6 +647,7 @@ a:hover .corusel-book__img {
 .corusel-book__img img {max-width: 100%;}
 .corusel-book__in a {line-height: 20px; font-size: 14px;}
 .corusel-book__pay {font-size: 18px; font-weight: 300;padding-top: 10px;}
+.corusel-book__pay del {display: block; font-size: 80%;}
 .owl-btn .owl-prev, .owl-btn .owl-next {position: absolute; top: 110px; font-size: 0; margin: 0; width: 52px; height: 52px;
     -webkit-border-radius: 26px;
     -moz-border-radius: 26px;
