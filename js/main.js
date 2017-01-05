@@ -111,36 +111,46 @@ $(document).ready(function() {
 	        }
 	    }
 	});
-	$('.corusel-catalog').owlCarousel({
-		loop:true,
-	    margin:60,
-	    lazyLoad:true,
-	    autoHeight:false,
-	    autoplay:false,
-    	autoplayTimeout:3000,
-	    nav:true,
-	    responsive:{
-	        0:{
-	            items:1,
-	            margin:20
-	        },
-	        500:{
-	            items:2,
-	            margin:10
-	        },
-	        1000:{
-	            items:3,
-	            margin:10
-	        },
-	        1200:{
-	            items:4,
-	            margin:30
-	        },
-	        1600:{
-	            items:5,
-	            margin:30
-	        }
-	    }
+
+	
+	$('.corusel-catalog').each(function(){
+		var loopWidth = true;
+		if($(this).find('.corusel-book__item').length > 5) {
+			loopWidth = true
+		} else {
+			loopWidth = false
+		};
+		$(this).owlCarousel({
+			loop:loopWidth,
+		    margin:60,
+		    lazyLoad:true,
+		    autoHeight:false,
+		    autoplay:false,
+	    	autoplayTimeout:3000,
+		    nav:true,
+		    responsive:{
+		        0:{
+		            items:1,
+		            margin:20
+		        },
+		        500:{
+		            items:2,
+		            margin:10
+		        },
+		        1000:{
+		            items:3,
+		            margin:10
+		        },
+		        1200:{
+		            items:4,
+		            margin:30
+		        },
+		        1600:{
+		            items:5,
+		            margin:30
+		        }
+		    }
+		});
 	});
 
 
@@ -440,11 +450,6 @@ $(document).ready(function() {
 	});
 
 
-	// filter service
-	$('.catalog-menu a').on('click', function () {
-		$(this).parent().toggleClass('active');
-		return false;
-	});
 
 
 
@@ -1036,6 +1041,7 @@ $('body').bind( "touchend", function(e){
 
 
 //  REMOVE
+/*
 $('body').append(
 	'<div style="position: fixed; z-index: 9999; bottom: 0; right: 0; background: #fff; border: solid 1px #000; width: 200px; font-size: 13px;"> \
 		<a href="javascript:void(0);" style="float: right;background:#ccc; color:#000; padding: 5px 10px;position:relative;z-index:20; text-decoration:none" onclick="$(this).parent().hide()">Закрыть X</a> \
@@ -1048,4 +1054,4 @@ $('body').append(
 		<li style="margin: 0 0 5px;"><a href="yslygi.html">yslygi</a></li> \
 		<li style="margin: 0 0 5px;"><a href="zakaz.html">zakaz</a></li> \
 	</ol> \
-</div>');
+</div>');*/

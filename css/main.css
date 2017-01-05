@@ -866,6 +866,7 @@ body .catalog-menu li a {display: block; text-decoration: none; color: #000; hei
 body .catalog-menu li:hover {z-index: 18;}
 body .catalog-menu li a:hover {text-decoration: none; border-color: #3fcdfd;}
 body .catalog-menu li a:hover path {fill: #33a5cb; fill-rule: evenodd;}
+body .catalog-menu li a:hover img {opacity: 0.6;}
 body .catalog-menu li.active a path {fill: #0e3150; fill-rule: evenodd;}
 body .catalog-menu__img {display: block; height: 106px; padding: 26px 0 0;}
 body .catalog-menu li.active {z-index: 20;}
