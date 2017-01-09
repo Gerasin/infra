@@ -262,7 +262,11 @@ $(document).ready(function() {
 
 	// filter
 	$('.filter-slide__check').jScrollPane();
-	$('.filter-slide__popup, .filter-slide__wrap').hide();
+	$('.filter-slide__popup').hide();
+	$('.filter-slide__wrap').each(function(){
+		if(!$(this).hasClass('active')) {$(this).hide()}
+	});
+
 
 
 	$('.filter-slide__open').on('click', function () {
@@ -428,7 +432,6 @@ $(document).ready(function() {
 		$('.filter-slide__reset-check, .filter-slide__length-all, .filter-slide__reset-all').hide();
 		$('.catalog-filter').find('.filter-slide__length').hide();
 		$('.catalog-filter').find('.filter-slide__reset').hide();
-		return false;
 	});
 
 	// marker check
