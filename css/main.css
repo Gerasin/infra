@@ -770,17 +770,20 @@ a:hover .corusel-book__img {
 
 .baner-tovar {background: #ededed;padding: 20px 0 2px;margin-bottom: 18px;}
 .baner-tovar__tab {float: right; width: 336px;}
-.baner-tovar__tab a {display: block; padding: 30px 10px 30px 30px; text-decoration: none !important; position: relative; min-height: 131px;
+.baner-tovar__tab a {display: block; padding: 30px 10px 30px 30px; margin-bottom: -1px; text-decoration: none !important; position: relative; min-height: 131px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;}
 .baner-tovar__tab a:hover {
-    -webkit-box-shadow: 0 2px 4px rgba(0,47,73,.14);
-    -moz-box-shadow: 0 2px 4px rgba(0,47,73,.14);
-    box-shadow: 0 2px 4px rgba(0,47,73,.14);
+    -webkit-box-shadow: 0 2px 4px rgba(0,47,73,.14), 0 -1px 1px 0 #dcdcdc;
+    -moz-box-shadow: 0 2px 4px rgba(0,47,73,.14), 0 -1px 1px 0 #dcdcdc;
+    box-shadow: 0 2px 4px rgba(0,47,73,.14), 0 -1px 1px 0 #dcdcdc;
+    background: #ededed;
+    z-index: 10; position: relative;
 }
 .baner-tovar__tab a:hover:before {display: none;}
 .baner-tovar__tab a:before {content: ' '; position: absolute; bottom: 0; left: 30px; right: 0; border-bottom: 1px solid #dcdcdc;}
+.baner-tovar__tab a:last-child:before {display: none;}
 .baner-tovar__tab a span {display: block; float: left; width: 50px; margin-right: 18px;
     -webkit-box-shadow: 0 2px 3px rgba(28,28,28,.5);
     -moz-box-shadow: 0 2px 3px rgba(28,28,28,.5);
