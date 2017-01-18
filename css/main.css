@@ -1584,5 +1584,9 @@ body .main-profile-form-buttons-block {width: auto; max-width: 500px; width: aut
 .catalog-sl {margin-left: 0;}
 
 
+.favorites {margin: 0 0 28px;}
+.favorites button {background: none; border: none; outline: none; color: #1682bf; font-size: 14px; line-height: 18px; padding: 0;}
+.favorites button:before {content: ' '; position: relative; display: inline-block; margin: 0 6px 0 0; top: -2px; width: 19px; height: 18px; background: url(../img/themp/fav.png) 0 0 no-repeat;}
 
+.width-item--white * {color: #fff;}
 
